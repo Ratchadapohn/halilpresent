@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* พื้นหลังดำสนิท */
+  color: white; /* ตัวหนังสือสีขาว */
+  font-family: "Great Vibes", cursive;
+  overflow-x: hidden;
+}
+
+/* เพิ่ม animation เล็ก ๆ ให้ตัวพื้นหลังขยับเบา ๆ */
+.animate-background {
+  animation: pulse 10s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: #111111;
+  }
+}
+
+/* เพิ่มฟอนต์ fancy ที่ใช้ในข้อความ */
+.font-fancy {
+  font-family: "Great Vibes", cursive;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-fancy {
+  font-family: "Great Vibes", cursive;
+}
